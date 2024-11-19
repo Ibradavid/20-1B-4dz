@@ -46,6 +46,7 @@ INSTALLED_APPS = [
     
     # drf
     'rest_framework',
+    'drf_yasg',
 ]
 
 MIDDLEWARE = [
@@ -92,12 +93,15 @@ DATABASES = {
 
 # DATABASES = {
 #     'default': {
-#         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-#         'NAME': os.environ.get("DB_NAME"),
-#         'USER': os.environ.get("DB_USER"),
-#         'PASSWORD': os.environ.get("DB_USER_PASSWORD"),
-#         'HOST': os.environ.get("DB_HOST"),
-#         'PORT': os.environ.get("DB_PORT"),
+#         'ENGINE': 'django.db.backends.mysql',
+#         'NAME': 'David_db',
+#         'USER': 'redm1k',
+#         'PASSWORD': 'sanirabiga3133',
+#         'HOST': 'redm1k.mysql.pythonanywhere-services.com',
+#         'PORT': '5432',
+#         'OPTIONS':{
+#             'init_command':"SET sql_mode=''STRICT_TRANS_TABLES"
+#         }
 #     }
 # }
 
@@ -136,6 +140,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/5.1/howto/static-files/
 
 STATIC_URL = 'static/'
+# STATIC_ROOT = "/hame/redm1k/20-1B-4dz/static"
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
